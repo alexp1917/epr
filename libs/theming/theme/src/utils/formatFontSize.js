@@ -1,5 +1,5 @@
-import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
-const breakpoints = createBreakpoints({});
+// import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
+// const breakpoints = createBreakpoints({});
 
 // ----------------------------------------------------------------------
 
@@ -12,9 +12,9 @@ export function pxToRem(value) {
 }
 
 export function responsiveFontSizes({ sm, md, lg }) {
-  return {
+  return {/*
     [breakpoints.up('sm')]: { fontSize: pxToRem(sm) },
     [breakpoints.up('md')]: { fontSize: pxToRem(md) },
     [breakpoints.up('lg')]: { fontSize: pxToRem(lg) },
-  };
+  */};
 }

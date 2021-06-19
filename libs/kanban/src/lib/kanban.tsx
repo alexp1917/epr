@@ -24,14 +24,14 @@ export function Kanban({ helloWorldProp }: KanbanProps) {
   return (
     <Grid container spacing={2}>
       <Grid item xs={3}>
-        {itemList &&
+        {/*itemList &&
           itemList.map((item, index) => (
             <Stack spacing={2} margin={5} direction="row" key={index}>
               <CardWrapper>
                 <CardItem item={item} />
               </CardWrapper>
             </Stack>
-          ))}
+          ))*/}
 
         <Button variant="contained" color="secondary" onClick={() => setColumnList((column) => column + 1)}>
           Add Item

@@ -1,4 +1,6 @@
-import { alpha, PaletteColorOptions, PaletteOptions, useTheme } from '@material-ui/core/styles';
+import { PaletteColorOptions, PaletteOptions, useTheme } from '@material-ui/core/styles';
+
+import { alpha } from './alpha';
 
 // ----------------------------------------------------------------------
 

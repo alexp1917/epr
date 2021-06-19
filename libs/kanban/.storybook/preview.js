@@ -2,8 +2,8 @@
 import { addDecorator } from '@storybook/react';
 import { withKnobs, boolean, select } from '@storybook/addon-knobs';
 import { darkTheme, lightTheme } from '@theming/theme';
-import { ThemeProvider, createTheme } from '@material-ui/core/styles';
-import { StyledEngineProvider } from '@material-ui/styled-engine';
+// import { ThemeProvider, createTheme } from '@material-ui/core/styles';
+// import { StyledEngineProvider } from '@material-ui/styled-engine';
 import { useMemo, useEffect } from 'react';
 // import { withThemes } from '@react-theming/storybook-addon';
 // import { ThemeConfig } from '@base/web/theme';
@@ -26,14 +26,14 @@ addDecorator((Story) => {
 
   const themeOptions = isLight ? lightTheme : darkTheme;
 
-  const theme = useMemo(() => createTheme(themeOptions, localeMap.en), [themeOptions]);
+  // const theme = useMemo(() => createTheme(themeOptions, localeMap.en), [themeOptions]);
   return (
-    <ThemeProvider theme={theme}>
-      <LocalizationProvider dateAdapter={AdapterDateFns} locale={localeMap.en}>
-        <StyledEngineProvider injectFirst>
+    // <ThemeProvider theme={theme}>
+      // <LocalizationProvider dateAdapter={AdapterDateFns} locale={localeMap.en}>
+        // <StyledEngineProvider injectFirst>
           <Story />
-        </StyledEngineProvider>
-      </LocalizationProvider>
-    </ThemeProvider>
+        // </StyledEngineProvider>
+      // </LocalizationProvider>
+    // </ThemeProvider>
   );
 });
